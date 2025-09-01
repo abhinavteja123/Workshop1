@@ -17,59 +17,52 @@
       color: #212529;
     }
     header {
-  background: url('https://i.postimg.cc/g0GfScky/finalback.jpg') center center no-repeat;
-  background-size: cover;
-  min-height: 220px; /* instead of fixed height */
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-header h1 {
-  font-size: 1.0em;
-  color: black;
-  margin: 0;
-  text-align: right;
-  padding: 10px 15px;
-  border-radius: 8px;
-  max-width: 30%;
-  word-wrap: break-word;
-}
-
-@media (max-width: 768px) {
-  header {
-    width: 100vw; /* span full viewport width */
-    min-height: auto; /* height adjusts with content */
-    padding: 24px;
-    box-sizing: border-box;
-    background-size: contain; /* show whole image without cropping */
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  header h1 {
-    font-size: 1em;
-    padding: 8px 10px;
-    /*background-color: rgba(255, 255, 255, 0.7); /* text readable on any bg */
-    max-width: 100%;
-    text-align: center;
-  }
-}
-@media print {
-  header {
-    background-size: contain !important;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-}
-
-
-
+      background: url('https://i.postimg.cc/g0GfScky/finalback.jpg') center center no-repeat;
+      background-size: cover;
+      min-height: 220px;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    header h1 {
+      font-size: 1.0em;
+      color: black;
+      margin: 0;
+      text-align: right;
+      padding: 10px 15px;
+      border-radius: 8px;
+      max-width: 30%;
+      word-wrap: break-word;
+    }
+    @media (max-width: 768px) {
+      header {
+        width: 100vw;
+        min-height: auto;
+        padding: 24px;
+        box-sizing: border-box;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      header h1 {
+        font-size: 1em;
+        padding: 8px 10px;
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+    @media print {
+      header {
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
     nav {
       display: flex;
       justify-content: space-between;
@@ -135,6 +128,20 @@ header h1 {
       padding: 20px;
       font-size: 0.95em;
     }
+    /* Submit button style */
+    .submit-link {
+      display: inline-block;
+      background: #6a0dad;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .submit-link:hover {
+      background: #9c27b0;
+    }
   </style>
 </head>
 <body>
@@ -150,6 +157,7 @@ header h1 {
     <a href="#history">History</a>
     <a href="#cfp">Call for Papers</a>
     <a href="#audience">Audience</a>
+    <a href="#publicity">Publicity Plan</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -186,6 +194,14 @@ Machine Learning for Next-Gen Intelligent Systems</h1>
       <li>Strategies for quantum error correction and the design of noise-resilient quantum systems.</li>
       <li>Emerging use-cases and applications in post-quantum cryptography, network security, and drug discovery.</li>
     </ul>
+
+    <!-- Added Submit Link -->
+    <h3>Submit your paper :</h3>
+    <p>
+      <a href="https://edas.info/newPaper.php?c=34325&track=133415" class="submit-link" target="_blank">
+        Submit via EDAS
+      </a>
+    </p>
   </div>
 </section>
 
@@ -312,6 +328,14 @@ Machine Learning for Next-Gen Intelligent Systems</h1>
       <li>Camera-Ready Submission: October 1, 2025</li>
       <li>Workshop Date: November 11, 2025</li>
     </ul>
+
+    <!-- Added Submit Link -->
+    <h3>Submit your paper :</h3>
+    <p>
+      <a href="https://edas.info/newPaper.php?c=34325&track=133415" class="submit-link" target="_blank">
+        Submit via EDAS
+      </a>
+    </p>
   </div>
 </section>
 
@@ -326,7 +350,19 @@ Machine Learning for Next-Gen Intelligent Systems</h1>
     </ul>
   </div>
 </section>
-  
+
+<section id="publicity">
+  <div class="card">
+    <h2>Publicity Plan</h2>
+    <ul>
+      <li>Targeted Dissemination via QWorld, IEEE QCE, Qiskit Slack, etc.</li>
+      <li>Official Workshop Page on NEW2AN 2025 site</li>
+      <li>Social Media Engagement on LinkedIn, X (Twitter), ResearchGate</li>
+      <li>Institutional Outreach via newsletters and partner networks</li>
+    </ul>
+  </div>
+</section>
+
 <section id="contact">
   <div class="card">
     <h2>Contact</h2>
